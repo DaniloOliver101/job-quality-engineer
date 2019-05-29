@@ -69,26 +69,11 @@ Quando("o cep de Origem é {string}") do |o_zip_code|
           expect(@days[0]).to eq days_to_delivery
           @delivery_name = @delivery_info.collect { |e| e['delivery_method_name']}
           @delivery_name.each do |item| 
-            if @sales_channel == "CN123"
-                expect(item).not_to eql delivery_method 
-            end
-            if @destination_zip_code.to_i >= 22710010 ||
+            if @sales_channel == "CN123" && @destination_zip_code.to_i >= 22710010 &&
                 @destination_zip_code.to_i <= 22710990
                 expect(item).not_to eq delivery_method
             end 
-            # expect(item).to eq delivery_method
-            @test = item == delivery_method
-            # if @test == true
-            #     @delivery = item
-            #     if @sales_channel == "CN123"
-            #         expect(@delivery).to eq delivery_method
-            # end
         end
-        # expect(@delivery).to eq delfivery_method
-        if @delivery == ""
-            puts @delivery_name
-        end
-        #   puts @delivery_name
         
         end
   end

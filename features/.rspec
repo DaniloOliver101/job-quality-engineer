@@ -1,2 +1,0 @@
---require env
---format html  --out results/cucumber_result.html

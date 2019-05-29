@@ -1,7 +1,10 @@
-#Segue aqui os passos para instalar o Ruby em seu ambiente conforme seu sistema operacional.
+#OBS
 
-#Windows 
-Baixar atravésdo Link 
+- Caso já Possua o Ruby instalado a partir da versão 2.4.3, ignore esse arquivo
+  #Segue aqui os passos para instalar o Ruby em seu ambiente conforme seu sistema operacional.
+
+#Windows
+Baixar atravésdo Link
 https://rubyinstaller.org/downloads/
 Baixar a Versão 2.4.6.1 com o DEVKIT
 
@@ -22,7 +25,7 @@ sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libread
 
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+echo 'eval "\$(rbenv init -)"' >> ~/.zshrc
 
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.zshrc
@@ -34,7 +37,7 @@ rbenv global 2.6.1
 
 source ~/.zshrc
 
-#Devs que usam Bash Padrão 
+#Devs que usam Bash Padrão
 
 sudo apt-get install git
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -44,7 +47,7 @@ exec $SHELL
 
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
-exec $SHELL
+exec \$SHELL
 
 source ~/.bashrc
 
@@ -52,4 +55,3 @@ rbenv install 2.6.1
 rbenv global 2.6.1
 
 source ~/.bashrc
-
