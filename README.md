@@ -4,16 +4,17 @@
 - Para executar, abrir um terminal dentro da pasta do projeto
 - Instalar as Gems
 
-  $ gem install bundler
+   `gem install bundler
   $ gem install cucumber
   $ gem install rspec
-  $ gem install httparty
+  $ gem install httparty`
 
 - Executar o bundle
   \$ bundle install
 - Executar o Cucumber
-  $ cucumber --init
-$ cucumber
+  
+$ `cucumber --init`
+$ `cucumber`
   #Porquê escolhi Ruby para criação dos testes?
 
 * É a linguagem que de programação que identifico melhor facilidade para codificar testes
