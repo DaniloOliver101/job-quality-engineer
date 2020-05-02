@@ -3,10 +3,12 @@
 - Ter o Ruby Instalado: Arquivo RUBYInstaller.md
 - Para executar, abrir um terminal dentro da pasta do projeto
 - Instalar as Gems
-  $ Gem install bundler
-$ Gem install cucumber
-  $ Gem install rspec
-$ Gem install httparty
+
+  $ gem install bundler
+  $ gem install cucumber
+  $ gem install rspec
+  $ gem install httparty
+
 - Executar o bundle
   \$ bundle install
 - Executar o Cucumber
