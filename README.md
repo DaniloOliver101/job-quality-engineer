@@ -19,7 +19,8 @@ Executar o bundle
 - Executar o Cucumber
   
 `$ cucumber --init`
-$ `cucumber`
+ `$ cucumber`
+
   #Porquê escolhi Ruby para criação dos testes?
 
 * É a linguagem de programação que identifico melhor facilidade para codificar testes
